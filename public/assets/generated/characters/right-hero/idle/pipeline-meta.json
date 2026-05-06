@@ -1,0 +1,175 @@
+{
+  "target": "asset",
+  "mode": "idle",
+  "prompt": "Right hero idle 2x2 second chibi ink-brush kung fu child sprite sheet, solid magenta raw background.",
+  "role": "",
+  "input": "C:\\Users\\user\\.codex\\generated_images\\019df102-434f-7a41-88ae-f34c54635fb3\\ig_0529bf91db9b24fa0169f86c1b72708191833ba1f9776e9b33.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 160,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 256,
+  "fit_scale": 0.86,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "feet",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 10,
+  "min_component_area": 1,
+  "edge_touch_margin": 3,
+  "frame_labels": [
+    "idle-1",
+    "idle-2",
+    "idle-3",
+    "idle-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 81050,
+      "selected_component_bbox": [
+        227,
+        74,
+        490,
+        566
+      ],
+      "crop_bbox": [
+        217,
+        64,
+        500,
+        576
+      ],
+      "edge_touch": false,
+      "output_size": [
+        120,
+        217
+      ],
+      "paste_position": [
+        68,
+        22
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 82640,
+      "selected_component_bbox": [
+        142,
+        66,
+        404,
+        565
+      ],
+      "crop_bbox": [
+        132,
+        56,
+        414,
+        575
+      ],
+      "edge_touch": false,
+      "output_size": [
+        119,
+        220
+      ],
+      "paste_position": [
+        68,
+        19
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 79460,
+      "selected_component_bbox": [
+        241,
+        56,
+        498,
+        544
+      ],
+      "crop_bbox": [
+        231,
+        46,
+        508,
+        554
+      ],
+      "edge_touch": false,
+      "output_size": [
+        117,
+        215
+      ],
+      "paste_position": [
+        69,
+        24
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 78989,
+      "selected_component_bbox": [
+        151,
+        55,
+        407,
+        544
+      ],
+      "crop_bbox": [
+        141,
+        45,
+        417,
+        554
+      ],
+      "edge_touch": false,
+      "output_size": [
+        117,
+        215
+      ],
+      "paste_position": [
+        69,
+        24
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

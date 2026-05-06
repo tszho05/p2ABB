@@ -1,0 +1,150 @@
+{
+  "target": "asset",
+  "mode": "projectile",
+  "prompt": "Rainbow beam attack FX regenerated compact 1x4 left-to-right sprite sheet, solid magenta raw background.",
+  "role": "",
+  "input": "C:\\Users\\user\\.codex\\generated_images\\019df102-434f-7a41-88ae-f34c54635fb3\\ig_0529bf91db9b24fa0169f86e96a0a88191bc1f3e0a06c3bd2a.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 160,
+  "rows": 1,
+  "cols": 4,
+  "cell_size": 384,
+  "fit_scale": 0.78,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 10,
+  "min_component_area": 1,
+  "edge_touch_margin": 3,
+  "frame_labels": [
+    "projectile-1",
+    "projectile-2",
+    "projectile-3",
+    "projectile-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "component_mode": "all",
+      "component_count": 12,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        214,
+        290,
+        362,
+        441
+      ],
+      "edge_touch": false,
+      "output_size": [
+        61,
+        63
+      ],
+      "paste_position": [
+        161,
+        160
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "component_mode": "all",
+      "component_count": 10,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        107,
+        323,
+        371,
+        415
+      ],
+      "edge_touch": false,
+      "output_size": [
+        110,
+        38
+      ],
+      "paste_position": [
+        137,
+        173
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        1086,
+        0,
+        1629,
+        724
+      ],
+      "component_mode": "all",
+      "component_count": 13,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        110,
+        304,
+        373,
+        445
+      ],
+      "edge_touch": false,
+      "output_size": [
+        110,
+        58
+      ],
+      "paste_position": [
+        137,
+        163
+      ]
+    },
+    {
+      "grid": [
+        0,
+        3
+      ],
+      "source_box": [
+        1629,
+        0,
+        2172,
+        724
+      ],
+      "component_mode": "all",
+      "component_count": 0,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": null,
+      "edge_touch": false,
+      "output_size": [
+        223,
+        299
+      ],
+      "paste_position": [
+        80,
+        42
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

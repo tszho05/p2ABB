@@ -1,0 +1,155 @@
+{
+  "target": "asset",
+  "mode": "projectile",
+  "prompt": "Create a clean 2D game FX sprite sheet for a browser game attack skill named Ink Dragon Surge. EXACTLY 1 row x 4 equal square frames in one horizontal strip. Solid #FF00FF magenta background filling the entire sheet, no transparency. Side-view left-to-right motion. High contrast Chinese ink-painting style, black sumi ink dragon-shaped energy made of brush strokes and mist, child-friendly and non-scary, no text, no logo. Frame 1: small curling ink serpent head forming at the left side. Frame 2: dragon-like ink stream lunges forward with whisker-like brush trails. Frame 3: huge exaggerated sweeping ink dragon silhouette surges across the center with bold splashes. Frame 4: dragon dissolves into smoky ink clouds and droplets. Keep the effect centered inside each cell with generous empty magenta margin; nothing touches or crosses cell edges; consistent scale and bounding box across frames; no characters, no background, no UI.",
+  "role": "",
+  "input": "public\\assets\\generated\\fx\\ink-dragon\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 95,
+  "rows": 1,
+  "cols": 4,
+  "cell_size": 128,
+  "fit_scale": 0.94,
+  "trim_border": 4,
+  "edge_clean_depth": 2,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 10,
+  "min_component_area": 1,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "projectile-1",
+    "projectile-2",
+    "projectile-3",
+    "projectile-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        515,
+        762
+      ],
+      "component_mode": "all",
+      "component_count": 63,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        85,
+        316,
+        311,
+        539
+      ],
+      "edge_touch": false,
+      "output_size": [
+        57,
+        56
+      ],
+      "paste_position": [
+        35,
+        36
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        515,
+        0,
+        1030,
+        762
+      ],
+      "component_mode": "all",
+      "component_count": 91,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        21,
+        278,
+        467,
+        555
+      ],
+      "edge_touch": false,
+      "output_size": [
+        113,
+        70
+      ],
+      "paste_position": [
+        7,
+        29
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        1030,
+        0,
+        1545,
+        762
+      ],
+      "component_mode": "all",
+      "component_count": 113,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        17,
+        171,
+        489,
+        614
+      ],
+      "edge_touch": false,
+      "output_size": [
+        120,
+        112
+      ],
+      "paste_position": [
+        4,
+        8
+      ]
+    },
+    {
+      "grid": [
+        0,
+        3
+      ],
+      "source_box": [
+        1545,
+        0,
+        2060,
+        762
+      ],
+      "component_mode": "all",
+      "component_count": 91,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        26,
+        247,
+        457,
+        580
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        84
+      ],
+      "paste_position": [
+        9,
+        22
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

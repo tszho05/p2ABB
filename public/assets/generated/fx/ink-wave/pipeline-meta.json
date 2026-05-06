@@ -1,0 +1,155 @@
+{
+  "target": "asset",
+  "mode": "projectile",
+  "prompt": "Create a clean 2D game FX sprite sheet for a browser game attack skill named Ink Wave. EXACTLY 1 row x 4 equal square frames in one horizontal strip. Solid #FF00FF magenta background filling the entire sheet, no transparency. Side-view left-to-right motion. High contrast Chinese ink-painting style, bold black sumi ink and deep gray wash only, child-friendly, no text, no logo. Frame 1: small concentrated ink ring forming at the left side of the cell. Frame 2: large circular ink shockwave expanding forward with splashes. Frame 3: huge exaggerated rolling wave of black ink crossing the middle, dynamic brush splatter. Frame 4: dissipating smoky ink droplets and trailing brush texture. Keep the effect centered inside each cell with generous empty magenta margin; nothing touches or crosses cell edges; consistent scale and bounding box across frames; no characters, no background, no UI.",
+  "role": "",
+  "input": "public\\assets\\generated\\fx\\ink-wave\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 95,
+  "rows": 1,
+  "cols": 4,
+  "cell_size": 128,
+  "fit_scale": 0.94,
+  "trim_border": 4,
+  "edge_clean_depth": 2,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 10,
+  "min_component_area": 1,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "projectile-1",
+    "projectile-2",
+    "projectile-3",
+    "projectile-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        516,
+        761
+      ],
+      "component_mode": "all",
+      "component_count": 97,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        114,
+        268,
+        364,
+        533
+      ],
+      "edge_touch": false,
+      "output_size": [
+        64,
+        68
+      ],
+      "paste_position": [
+        32,
+        30
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        516,
+        0,
+        1032,
+        761
+      ],
+      "component_mode": "all",
+      "component_count": 207,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        23,
+        188,
+        467,
+        608
+      ],
+      "edge_touch": false,
+      "output_size": [
+        114,
+        108
+      ],
+      "paste_position": [
+        7,
+        10
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        1032,
+        0,
+        1548,
+        761
+      ],
+      "component_mode": "all",
+      "component_count": 151,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        23,
+        200,
+        490,
+        607
+      ],
+      "edge_touch": false,
+      "output_size": [
+        120,
+        104
+      ],
+      "paste_position": [
+        4,
+        12
+      ]
+    },
+    {
+      "grid": [
+        0,
+        3
+      ],
+      "source_box": [
+        1548,
+        0,
+        2064,
+        761
+      ],
+      "component_mode": "all",
+      "component_count": 145,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        44,
+        239,
+        465,
+        591
+      ],
+      "edge_touch": false,
+      "output_size": [
+        108,
+        90
+      ],
+      "paste_position": [
+        10,
+        19
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

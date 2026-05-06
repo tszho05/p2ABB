@@ -1,0 +1,155 @@
+{
+  "target": "asset",
+  "mode": "projectile",
+  "prompt": "Create a clean 2D game FX sprite sheet for a browser game attack skill named Ink Splash Burst. EXACTLY 1 row x 4 equal square frames in one horizontal strip. Solid #FF00FF magenta background filling the entire sheet, no transparency. IMPORTANT: leave a very large empty magenta border in every frame; the ink effect must occupy only the central 65 percent of each cell and must never touch any cell edge. Side-view left-to-right motion. High contrast Chinese ink-painting style, bold black ink explosion, radial brush splashes, smoky gray wash, child-friendly, no text, no logo. Frame 1: small dense ink blot charging near center-left. Frame 2: blot erupts into a forward splash with thick brush streaks. Frame 3: exaggerated radial ink burst in the center with droplets and brush petals, still inside the safe border. Frame 4: burst fades into falling ink drops and smoky wash. Consistent scale and bounding box across frames; no characters, no background, no UI.",
+  "role": "",
+  "input": "public\\assets\\generated\\fx\\ink-splash-burst\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 95,
+  "rows": 1,
+  "cols": 4,
+  "cell_size": 128,
+  "fit_scale": 0.94,
+  "trim_border": 4,
+  "edge_clean_depth": 2,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 10,
+  "min_component_area": 1,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "projectile-1",
+    "projectile-2",
+    "projectile-3",
+    "projectile-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        517,
+        760
+      ],
+      "component_mode": "all",
+      "component_count": 43,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        164,
+        309,
+        325,
+        459
+      ],
+      "edge_touch": false,
+      "output_size": [
+        47,
+        44
+      ],
+      "paste_position": [
+        40,
+        42
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        517,
+        0,
+        1034,
+        760
+      ],
+      "component_mode": "all",
+      "component_count": 65,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        90,
+        273,
+        421,
+        508
+      ],
+      "edge_touch": false,
+      "output_size": [
+        98,
+        69
+      ],
+      "paste_position": [
+        15,
+        29
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        1034,
+        0,
+        1551,
+        760
+      ],
+      "component_mode": "all",
+      "component_count": 119,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        48,
+        209,
+        452,
+        563
+      ],
+      "edge_touch": false,
+      "output_size": [
+        120,
+        105
+      ],
+      "paste_position": [
+        4,
+        11
+      ]
+    },
+    {
+      "grid": [
+        0,
+        3
+      ],
+      "source_box": [
+        1551,
+        0,
+        2068,
+        760
+      ],
+      "component_mode": "all",
+      "component_count": 63,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        82,
+        266,
+        409,
+        532
+      ],
+      "edge_touch": false,
+      "output_size": [
+        97,
+        79
+      ],
+      "paste_position": [
+        15,
+        24
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}
