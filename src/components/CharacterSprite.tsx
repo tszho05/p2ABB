@@ -7,6 +7,7 @@ interface CharacterSpriteProps {
 }
 
 const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+const characterPoses: CharacterPose[] = ['idle', 'attack', 'hurt'];
 
 const spriteSources: Record<TeamSide, Record<CharacterPose, string>> = {
   left: {
@@ -38,13 +39,24 @@ export default function CharacterSprite({ side, pose, wordBurst = null }: Charac
         </div>
       )}
       <div className="ink-splash" />
-      <img
-        alt=""
-        aria-hidden="true"
-        className="character-image"
-        data-testid={`${side}-character-image`}
-        src={spriteSources[side][pose]}
-      />
+      {characterPoses.map((spritePose) => {
+        const active = pose === spritePose;
+
+        return (
+          <img
+            alt=""
+            aria-hidden="true"
+            className={`character-image ${active ? 'active' : ''}`}
+            data-active={active}
+            data-pose={spritePose}
+            data-testid={active ? `${side}-character-image` : `${side}-${spritePose}-character-image`}
+            decoding="async"
+            key={spritePose}
+            loading="eager"
+            src={spriteSources[side][spritePose]}
+          />
+        );
+      })}
     </div>
   );
 }

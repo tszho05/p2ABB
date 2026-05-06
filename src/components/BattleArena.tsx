@@ -27,6 +27,15 @@ export default function BattleArena({ state, onRestart }: BattleArenaProps) {
     state.lastCorrectWord && state.effectFrom === 'left' ? state.lastCorrectWord : null;
   const rightWordBurst =
     state.lastCorrectWord && state.effectFrom === 'right' ? state.lastCorrectWord : null;
+  const attackEffectKey = state.activeEffect
+    ? [
+        state.effectFrom,
+        state.activeEffect,
+        state.lastCorrectWord,
+        state.teams.left.hp,
+        state.teams.right.hp,
+      ].join('-')
+    : null;
 
   return (
     <section className="battle-arena" data-testid="battle-arena" aria-label="對戰區">
@@ -48,13 +57,16 @@ export default function BattleArena({ state, onRestart }: BattleArenaProps) {
         <div className="fighter-slot left" data-testid="left-fighter-slot">
           <CharacterSprite side="left" pose={state.teams.left.pose} wordBurst={leftWordBurst} />
         </div>
-        <div
-          className={`attack-effect ${effectClassName(state.activeEffect)} ${
-            state.effectFrom === 'right' ? 'from-right' : ''
-          }`}
-          aria-hidden="true"
-          data-testid="attack-effect"
-        />
+        {state.activeEffect && (
+          <div
+            className={`attack-effect ${effectClassName(state.activeEffect)} ${
+              state.effectFrom === 'right' ? 'from-right' : ''
+            }`}
+            aria-hidden="true"
+            data-testid="attack-effect"
+            key={attackEffectKey}
+          />
+        )}
         <div className="fighter-slot right" data-testid="right-fighter-slot">
           <CharacterSprite side="right" pose={state.teams.right.pose} wordBurst={rightWordBurst} />
         </div>

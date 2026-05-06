@@ -4,6 +4,7 @@ import App from './App';
 import { validABBWords } from './data/abbWords';
 import { hasValidABB } from './game/abbValidator';
 import { CORRECT_WORD_BURST_MS, WRONG_LOCK_DURATION_MS } from './game/constants';
+import { correctRefillDelayMs } from './game/gameReducer';
 
 const startGame = (difficulty = '困難') => {
   render(<App />);
@@ -132,10 +133,31 @@ describe('ABB 疊詞功夫擂台', () => {
       'src',
       '/assets/generated/characters/left-hero/idle/animation.gif',
     );
+    expect(screen.getByTestId('left-character-image')).toHaveAttribute('data-pose', 'idle');
+    expect(screen.getByTestId('left-character-image')).toHaveClass('active');
+    expect(screen.getByTestId('left-attack-character-image')).toHaveAttribute(
+      'src',
+      '/assets/generated/characters/left-hero/attack/animation.gif',
+    );
+    expect(screen.getByTestId('left-hurt-character-image')).toHaveAttribute(
+      'src',
+      '/assets/generated/characters/left-hero/hurt/animation.gif',
+    );
     expect(screen.getByTestId('right-character-image')).toHaveAttribute(
       'src',
       '/assets/generated/characters/right-hero/idle/animation.gif',
     );
+    expect(screen.getByTestId('right-character-image')).toHaveAttribute('data-pose', 'idle');
+    expect(screen.getByTestId('right-character-image')).toHaveClass('active');
+    expect(screen.getByTestId('right-attack-character-image')).toHaveAttribute(
+      'src',
+      '/assets/generated/characters/right-hero/attack/animation.gif',
+    );
+    expect(screen.getByTestId('right-hurt-character-image')).toHaveAttribute(
+      'src',
+      '/assets/generated/characters/right-hero/hurt/animation.gif',
+    );
+    expect(screen.queryByTestId('attack-effect')).not.toBeInTheDocument();
     expect(screen.getByTestId('left-fighter-slot')).toContainElement(
       screen.getByTestId('left-character'),
     );
@@ -182,6 +204,10 @@ describe('ABB 疊詞功夫擂台', () => {
 
     expect(screen.getByTestId('left-character')).toHaveClass('attack');
     expect(screen.getByTestId('right-character')).toHaveClass('hurt');
+    expect(screen.getByTestId('left-character-image')).toHaveAttribute('data-pose', 'attack');
+    expect(screen.getByTestId('left-character-image')).toHaveClass('active');
+    expect(screen.getByTestId('right-character-image')).toHaveAttribute('data-pose', 'hurt');
+    expect(screen.getByTestId('right-character-image')).toHaveClass('active');
     const attackEffectClassName = screen.getByTestId('attack-effect').className;
     expect(attackEffectClassName).toMatch(
       /\b(ink-wave|ink-brush-slash|ink-dragon|ink-splash-burst)\b/,
@@ -194,6 +220,22 @@ describe('ABB 疊詞功夫擂台', () => {
       'behind-character',
     );
     expect(screen.queryByTestId('right-word-burst')).not.toBeInTheDocument();
+  });
+
+  it('remounts the attack effect for quick consecutive correct answers', () => {
+    vi.useFakeTimers();
+    startGame();
+    pointerDownTiles(findValidWordTiles('left'));
+    const firstAttackEffect = screen.getByTestId('attack-effect');
+
+    act(() => {
+      vi.advanceTimersByTime(correctRefillDelayMs);
+    });
+
+    pointerDownTiles(findValidWordTiles('left'));
+
+    expect(screen.getByTestId('attack-effect')).toBeInTheDocument();
+    expect(screen.getByTestId('attack-effect')).not.toBe(firstAttackEffect);
   });
 
   it('keeps the correct word burst visible for 1.5 seconds', () => {
@@ -215,6 +257,11 @@ describe('ABB 疊詞功夫擂台', () => {
     });
 
     expect(screen.queryByTestId('left-word-burst')).not.toBeInTheDocument();
+    expect(screen.queryByTestId('attack-effect')).not.toBeInTheDocument();
+    expect(screen.getByTestId('left-character')).toHaveClass('idle');
+    expect(screen.getByTestId('right-character')).toHaveClass('idle');
+    expect(screen.getByTestId('left-character-image')).toHaveAttribute('data-pose', 'idle');
+    expect(screen.getByTestId('right-character-image')).toHaveAttribute('data-pose', 'idle');
   });
 
   it('shows the right team correct word behind the right character with upright text', () => {
