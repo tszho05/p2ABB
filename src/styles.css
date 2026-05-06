@@ -150,7 +150,7 @@ button {
 .battle-arena {
   background:
     linear-gradient(180deg, rgba(255, 248, 234, 0.08), rgba(255, 248, 234, 0.18)),
-    url("/assets/generated/backgrounds/arena-bg.png") center / cover no-repeat;
+    url("../assets/generated/backgrounds/arena-bg.png") center / cover no-repeat;
   border-bottom: 5px solid var(--ink);
   overflow: hidden;
   position: relative;
@@ -344,22 +344,22 @@ button {
 
 .attack-effect.ink-wave {
   animation: inkSkillBurst 1000ms ease-out;
-  background-image: url("/assets/generated/fx/ink-wave/animation.gif");
+  background-image: url("../assets/generated/fx/ink-wave/animation.gif");
 }
 
 .attack-effect.ink-brush-slash {
   animation: inkSkillBurst 1000ms ease-out;
-  background-image: url("/assets/generated/fx/ink-brush-slash/animation.gif");
+  background-image: url("../assets/generated/fx/ink-brush-slash/animation.gif");
 }
 
 .attack-effect.ink-dragon {
   animation: inkSkillBurst 1000ms ease-out;
-  background-image: url("/assets/generated/fx/ink-dragon/animation.gif");
+  background-image: url("../assets/generated/fx/ink-dragon/animation.gif");
 }
 
 .attack-effect.ink-splash-burst {
   animation: inkSkillBurst 1000ms ease-out;
-  background-image: url("/assets/generated/fx/ink-splash-burst/animation.gif");
+  background-image: url("../assets/generated/fx/ink-splash-burst/animation.gif");
 }
 
 .attack-effect.from-right {

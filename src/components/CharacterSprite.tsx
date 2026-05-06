@@ -6,16 +6,18 @@ interface CharacterSpriteProps {
   wordBurst?: string | null;
 }
 
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 const spriteSources: Record<TeamSide, Record<CharacterPose, string>> = {
   left: {
-    idle: '/assets/generated/characters/left-hero/idle/animation.gif',
-    attack: '/assets/generated/characters/left-hero/attack/animation.gif',
-    hurt: '/assets/generated/characters/left-hero/hurt/animation.gif',
+    idle: assetUrl('assets/generated/characters/left-hero/idle/animation.gif'),
+    attack: assetUrl('assets/generated/characters/left-hero/attack/animation.gif'),
+    hurt: assetUrl('assets/generated/characters/left-hero/hurt/animation.gif'),
   },
   right: {
-    idle: '/assets/generated/characters/right-hero/idle/animation.gif',
-    attack: '/assets/generated/characters/right-hero/attack/animation.gif',
-    hurt: '/assets/generated/characters/right-hero/hurt/animation.gif',
+    idle: assetUrl('assets/generated/characters/right-hero/idle/animation.gif'),
+    attack: assetUrl('assets/generated/characters/right-hero/attack/animation.gif'),
+    hurt: assetUrl('assets/generated/characters/right-hero/hurt/animation.gif'),
   },
 };
 
